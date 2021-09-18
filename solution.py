@@ -2,10 +2,12 @@
 #Space Complexity: O(1)
 
 def solution(A):
+    
     N = len(A) + 1
-    missing = ((N + 1) * N) / 2
+    
+    missingElement = ((N + 1) * N) / 2
     
     for x in A:
-        missing -= x
+        missingElement -= x
     
-    return missing
+    return missingElement
